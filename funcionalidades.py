@@ -1,13 +1,13 @@
 # importação de bibliotecas
-#import pandas as pd
-#import numpy as np
-#from datetime import datetime, timedelta
-#import random
-#import matplotlib.pyplot as plt
-#import seaborn as sns
-#import os
-#import json
-#import re
+import pandas as pd
+import numpy as np
+from datetime import datetime, timedelta
+import random
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+import json
+import re
 
 # RF01 – Criar ou Carregar o Dataset de Vendas
 def gerar_dataset_vendas(n_registros=200, seed=42):
@@ -362,20 +362,6 @@ def limpar_strings_com_regex(df):
 
 def main():
     """testar funcionamento"""
-    print("\n" + "="*60)
-    print(" SALESINSIGHT – Teste de funcionalidades")
-    print("="*60)
-
-    #importação das bibliotecas
-    import pandas as pd
-    import numpy as np
-    from datetime import datetime, timedelta
-    import random
-    import matplotlib.pyplot as plt
-    import seaborn as sns
-    import os
-    import json
-    import re
 
     print("\n" + "="*60)
     print(" SALESINSIGHT – Teste de funcionalidades")
@@ -396,7 +382,11 @@ def main():
     df_transformado = processar_coluna(df_completo, "quantidade",\
                                        lambda x: "Alto" if x > 5 else "Baixo")
     df_regex = limpar_strings_com_regex(df_transformado)
-    exportar_resultados(clientes, metricas, stats_numpy)
+    exportar_resultados(metricas, clientes, stats_numpy)
+
+    print("\n[CONCLUÍDO]")
+
+
 
 if __name__ == "__main__":
     main()
