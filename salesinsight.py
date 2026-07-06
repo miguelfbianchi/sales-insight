@@ -1,6 +1,6 @@
 from funcionalidades import *
 
-# RF09 – Criar uma Classe para o Pipeline
+# RF12 – Criar uma Classe para o Pipeline
 class AnalisadorDeVendas:
     """
     Classe responsável por encapsular o pipeline de análise de vendas.
@@ -67,7 +67,7 @@ class AnalisadorDeVendas:
             print("="*50)
 
 
-# RF10 – Usar Herança
+# RF13 – Usar Herança
 class AnalisadorComProjecao(AnalisadorDeVendas):
     """
     Extensão do AnalisadorDeVendas com funcionalidades de projeção simples.
@@ -119,7 +119,7 @@ class AnalisadorComProjecao(AnalisadorDeVendas):
 # RF14 – Executar o Pipeline Completo (Ponto de Entrada)
 def main():
     """
-    Função principal: executa o pipeline completo do SalesInsight PY.
+    Função principal: executa o pipeline completo do SalesInsight.
     """
     print("\n" + "="*60)
     print(" SALESINSIGHT PY - Pipeline de Análise de Dados de Vendas")

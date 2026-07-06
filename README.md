@@ -91,3 +91,19 @@ O desenvolvimento deste pipeline consolidou competências essenciais do ecossist
 <p align="center">
   <img src="./outputs/graficos/vendas_por_mes.png" alt="Análise Temporal" width="600">
 </p>
+
+<p align="center">
+  <img src="./prints/p1.png" alt="print1" width="600">
+</p>
+
+<p align="center">
+  <img src="./prints/p2.png" alt="print2" width="600">
+</p>
+
+<p align="center">
+  <img src="./prints/p3.png" alt="print3" width="600">
+</p>
+
+<p align="center">
+  <img src="./prints/p4.png" alt="print4" width="600">
+</p>
