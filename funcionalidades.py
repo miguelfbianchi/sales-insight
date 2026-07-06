@@ -9,7 +9,7 @@ import os
 import json
 import re
 
-# RF01 – Criar ou Carregar o Dataset de Vendas
+# RF01 – Criar o Dataset de Vendas
 def gerar_dataset_vendas(n_registros=200, seed=42):
     """Gera um dataset sintético de vendas com dados intencionalmente sujos."""
     random.seed(seed)       # inicialização do gerador aleatório interno da biblioteca random
@@ -299,7 +299,7 @@ def gerar_visualizacoes(df, metricas, output_dir="outputs/graficos"):
     print(f" Gráfico exportado: {caminho}")
     print("\n=== VISUALIZAÇÕES GERADAS COM SUCESSO ===")
 
-# RF11 – Usar Funções Lambda e Funções de Ordem Superior
+# RF09 – Usar Funções Lambda e Funções de Ordem Superior
 def processar_coluna(df, coluna, funcao_transformacao):
     """
     Aplica uma função de transformação a uma coluna do DataFrame.
@@ -309,7 +309,7 @@ def processar_coluna(df, coluna, funcao_transformacao):
     print(f" Coluna '{coluna}_transformado' criada com sucesso.")
     return df
 
-# RF12 – Ler e Escrever Arquivos (CSV e JSON)
+# RF10 – Ler e Escrever Arquivos (CSV e JSON)
 def exportar_resultados(metricas, clientes, stats_numpy):
     """Exporta resultados em CSV e JSON."""
     os.makedirs("outputs", exist_ok=True)
@@ -336,8 +336,7 @@ def exportar_resultados(metricas, clientes, stats_numpy):
         dados_lidos = json.load(f)
         print(f"\n Conteúdo do JSON exportado:\n {json.dumps(dados_lidos, indent=2)}")
 
-
-# RF13 – Usar Expressões Regulares para Limpeza de Dados
+# RF11 – Usar Expressões Regulares para Limpeza de Dados
 def limpar_strings_com_regex(df):
     """
     Usa expressões regulares para limpeza de colunas de texto.
