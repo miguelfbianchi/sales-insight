@@ -14,8 +14,6 @@ share/
 notebooks/
 pyvenv.cfg
 
-prints/
-
 *.json
 *.pdf
 *.doc
